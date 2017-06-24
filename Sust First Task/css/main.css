@@ -1,0 +1,847 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.0em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+  /*Header sectoin*/
+  header {
+    background: rgba(2, 6, 29, 0.78);
+    margin: -8px;
+    margin-bottom: 0px;
+    line-height: 0.7;
+    height: inherit;
+    border: 1px solid rgba(1, 4, 27, 0.71);
+}
+  .container {
+    padding: 0px 2%;
+    margin: 0px 3%;
+  }
+  .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+  .navbar {
+    position: relative;
+    min-height: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.navbar-brand{
+  text-decoration: none;
+  float: left;
+  padding-right: 0px;
+}
+.navbar-brand > img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: -1px;
+}
+.navbar-brand > h2 {
+    color: rgba(158, 211, 236, 0.95);
+    margin: 12px;
+    font-size: 1.3em;
+}
+.navbar-brand > h2 > span{
+  color:#fff;
+}
+
+.nav {
+    padding-left: 0;
+    list-style: none;
+    margin: 3px 0;
+    font-weight: bold;
+}
+.nav > li {
+  position: relative;
+  display: block;
+  float: right;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ccc;
+}
+.nav > li > a:hover, 
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: rgba(154, 148, 148, 0.68);
+    border-radius: 0% 30%;
+    color: rgb(123, 172, 220);
+}
+.nav > li.disabled > a {
+  color: #777;
+}
+.nav > li.disabled > a:hover,
+.nav > li.disabled > a:focus {
+  color: #777;
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+}
+
+/*First-Banner section*/
+
+#first-banner {
+    background-color: rgba(223, 102, 98, 0.88);
+    color: #fff;
+    margin: 0px -8px;
+    border: .5px solid rgba(226, 120, 116, 0.92);
+}
+
+.left-side {
+    float: left;
+    display: inline-block;
+    padding: 12% 0%;
+}
+.btn > span{
+  font-size: 175%;
+}
+.midle-side {
+    text-align: center;
+    display: inline-block;
+    width: 72%;
+    margin: 3% 9%;
+}
+.midle-side > h1 {
+    font-size: 32px;
+    font-family: arial;
+    line-height: .75em;
+    text-shadow: -2px -2px 4px rgba(101, 15, 15, 0.74);
+}
+.midle-side > p{
+  font-size: 14px;
+  font-family: arial;
+}
+.right-side{
+  float: right;
+  display: inline-block;
+  padding: 12% 0%;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    margin-right: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    border-radius: 4px;
+    background-color: rgba(204, 204, 204, 0.25);
+    color: rgba(255, 255, 255, 0.88);
+    box-shadow: 0px 0px 7px 1px rgba(154, 13, 13, 0.22);
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+}
+.btn.disabled,
+.btn[disabled],
+fieldset[disabled] .btn {
+  cursor: not-allowed;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  opacity: .65;
+}
+
+
+#second-banner {
+    background-color: rgba(181, 178, 178, 0.23);
+    text-align: center;
+    margin: 0px -8px;
+    padding: 25px 0px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0px;
+}
+.simple-text{
+      margin: 0px 385px;
+}
+.simple-text > h2 {
+    color: rgba(77, 201, 175, 1);
+    font-size: 2.4em;
+    margin: 11px 0px;
+    font-family: sans-serif;
+    text-shadow: -2px 1px 4px rgba(23, 7, 7, 0.56);
+}
+.simple-text > hr{
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 5px solid rgba(109, 102, 102, 0.19);
+    margin: 0em 13em;
+    padding: 0;
+    border-radius: 1em;
+}
+.simple-text > p {
+    font-size: 18px;
+    font-family: arial;
+    color: rgba(10, 72, 15, 0.61);
+}
+
+.spot {
+    width: 70%;
+    margin: 10px auto;
+    position: relative;
+    text-align: center;
+}
+.image-section {
+    display: inline-block;
+    float: left;
+    width: 254px;
+    margin: 0px 23px;
+    padding-bottom: 15px;
+}
+
+.image-section > img {
+    max-width: 130px;
+    padding: 35px;
+    border: 0px solid rgba(204, 204, 204, 0.73);
+    border-radius: 100px;
+    background-color: rgba(184, 186, 184, 0.88);
+    opacity: .3;
+    /*filter: alpha(opacity=50);*/
+}
+
+
+.image-section > img:hover,
+.image-section > img:focus{
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.image-section > h2 {
+    color: rgb(175, 7, 7);
+    margin: 11px 0px;
+}
+.image-section > p {
+    font-family: arial;
+    font-size: .8em;
+}
+
+/*third section*/
+
+#third-section {
+    background-color: rgba(73, 201, 175, 0.76);
+    text-align: center;
+    margin: 0px -8px;
+    padding: 25px 0px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0px;
+}
+.center-text {
+    margin: 1em 27em;
+    color: #fff;
+    display: block;
+    position: relative;
+    clear: both;
+    overflow: hidden;
+}
+.center-text > h2 {
+    color: rgb(233, 255, 255);
+    font-size: 2.4em;
+    margin: 11px 0px;
+    font-family: sans-serif;
+    text-shadow: -2px 1px 6px rgba(23, 7, 7, 0.56);
+}
+.center-text > hr {
+    display: block;
+    height: 1px;
+    border: 0px;
+    border-top: 5px solid rgba(109, 102, 102, 0.19);
+    margin: 0em 11em;
+    padding: 0;
+    border-radius: 1em;
+}
+.center-text > p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+.image-work{
+  margin: -4em;
+}
+.image-work > img {
+    min-width: 25em;
+    display: inline-block;
+    position: relative;
+    padding: 0px 23em;
+}
+.scroll {
+    width: 15em;
+    height: 2em;
+    
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 7em;
+    margin-top: -3em;
+}
+.scroll > ul {
+    list-style: none;
+    display: inline-block;
+    margin-bottom: 26px;
+    list-style-position: outside;
+    background-color: rgba(70, 183, 160, 0.7);
+    padding-left: 5px;
+}
+.scroll > ul> li {
+    float: left;
+    padding-right: 7px;
+    padding-top: 4px;
+}
+
+/*fourth section*/
+
+#fourth-section {
+    background-color: #fff;
+    text-align: center;
+    margin: 0px -8px;
+    padding: 25px 0px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.team-membar > ul{
+  list-style: none;
+  display: inline-block;
+} 
+.team-membar > ul >li{
+  float: left;
+  padding: 0px 10px;
+}
+.btn-radius {
+    border-radius: 54% !important;
+    color: rgba(152, 146, 146, 0.92);
+    margin-top: 6em;
+}
+.image{
+  width: 170px;
+  border-radius: 5%;
+  background: #ccc;
+}
+.image > img{
+  max-width: 120px;
+  border-radius: 75%;
+  padding: 15px; 
+}
+.image > h3{
+  padding: 0px;
+  margin: 5px;
+  font-family: arial;
+}
+.image > h2 {
+    background-color: #FA5C5C;
+    margin: 0px;
+    padding: 0px;
+    border-bottom-left-radius: 10%;
+    color: #fff;
+    border-bottom-right-radius: 10%;
+}
+
+/*fifth section*/
+
+#fifth-section{
+    background-color: rgba(73, 201, 175, 0.76);
+    text-align: center;
+    margin: 0px -8px;
+    padding: 25px 0px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0px;
+}
+.buton{
+  display: block;
+}
+
+.fluid-pic {
+    width: 580px;
+    padding-top: 15px;
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: -2.5em;
+}
+.fluid-pic > ul {
+    list-style: none;
+}
+.fluid-pic > ul > li{
+  float: left;
+}
+.image-three{
+  width: 170px;
+  padding: 10px 5px; 
+}
+.image-three > img{
+  max-width: 165px;
+  max-height: 150px;
+  min-width: 165px;
+  min-height: 150px;
+}
+
+
+/*six section*/
+
+#six-section{
+    background-color: #fff;
+    text-align: center;
+    margin: 0px -8px;
+    padding: 25px 0px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.service-image > ul{
+  list-style: none;
+  display: inline-block;
+} 
+.service-image > ul >li{
+  float: left;
+  padding: 0px 10px;
+}
+.service-image > ul >li>img{
+  max-width: 120px;
+  max-height: 120px;\
+  min-width: 120px;
+  min-height: 120px;
+  border-radius: 75%;
+  padding: 15px; 
+}
+.service-image > ul > li > h3{
+  padding: 0px;
+  margin: 5px;
+  font-family: arial;
+}
+.progress-bar {
+    position: relative;
+    overflow: visible;
+    padding: 4px 24%;
+    width: 75%;
+}
+progress {
+    width: 70%;
+    float: left;
+    height: 28px;
+    background: #d4c5c5;
+} 
+.progress {
+    margin: 10px;
+    width: 100%;
+    height: 2em;
+}
+.progress > h3 {
+    color: #fff;
+    position: absolute;
+    margin: 2px;
+    float: left;
+    margin-left: 9px;
+}
+.progress > p {
+    float: left;
+    margin: 4px;
+}
+
+  /*seven-section*/
+
+#seven-section{
+    background-color: rgba(73, 201, 175, 0.76);
+    text-align: center;
+    margin: 0px -8px;
+    padding: 25px 0px;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 5em;
+    border-bottom-style: dotted;
+    border-bottom-width: 5px;
+    border-bottom-color: red; 
+}
+
+.content {
+    width: 59%;
+    display: inline-block;
+    margin: 0% 24%;
+}
+.left-content{
+  display: inline-block;
+  float: left;
+}
+.left-content >p {
+    font-family: arial;
+    color: #fff;
+    font-size: .9em;
+    text-align: left;
+}
+.left-content >h2 {
+    font-family: arial;
+    font-size: 1.8em;
+    text-shadow: 2px 1px 3px rgba(37, 111, 96, 0.92);
+}
+.left-content >h4 {
+    text-align: left;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.social {
+    margin-top: -4em;
+}
+
+
+.right-content {
+    width: 75%;
+    margin-left: 40%;
+}
+form {
+    /* margin: 2em 0em; */
+    text-align: left;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.form-control {
+    background-color: rgba(165, 169, 168, 0.21);
+    border-radius: 5%;
+    padding: 9px;
+    border: 1px solid rgba(155, 165, 163, 0.28);
+    color: #fff;
+}
+.btn-danger {
+    background-color: rgba(250, 92, 92, 0.9);
+    float: right;
+    margin-right: 13em;
+}
+
+footer{
+    background-color: #2B3E50;
+    text-align: center;
+    margin: 0px -8px;
+    padding: 25px 0px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 0px;
+}
+.form > h2{
+    text-align: center;
+    color: #fff;
+    display: inline-block;
+}
+.form > p {
+    text-align: right;
+    color: #ccc;
+    font-family: arial;
+    font-size: 11px;
+    margin-right: 31em;
+}
+.form{
+    text-align: center;
+    color: #fff;
+    line-height: 1.5em;
+}
+
+.btn-info{
+  background-color: rgba(73, 201, 175, 0.76);
+  margin-left: 5px;
+}
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
